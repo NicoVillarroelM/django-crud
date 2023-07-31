@@ -1,1 +1,1 @@
-Este es mi proyecto django-crud
+Este es mi proyecto sin crud
