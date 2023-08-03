@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Esta es mi página web</h1>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus facilis quo, consequuntur aliquam suscipit corrupti dolore eveniet quasi blanditiis voluptates sit, cumque perspiciatis inventore nam cum soluta tempore debitis corporis illo commodi minima ipsum deleniti aspernatur! Illum nostrum nobis, deserunt blanditiis quam magnam libero voluptatum deleniti pariatur nam architecto, voluptas minus, molestias quidem! Perspiciatis corporis vero quisquam asperiores. Tenetur, quasi quo veniam laborum odio est expedita magni minus? Veritatis, ipsum. Tempora reiciendis dolore optio quidem quibusdam nulla temporibus similique fuga labore dignissimos iste, odio deserunt error maxime! Recusandae id consequuntur sit dolores modi illo delectus, ratione perspiciatis itaque velit. At.</p>
+    <main class="container py-5">
+        <section class="card card-body">
+            <h1 class="display-1 text-center">Home</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit nihil reprehenderit, tempore iusto ea alias ab ad, eum totam nesciunt excepturi laudantium exercitationem perspiciatis nostrum? Distinctio dolores, velit beatae non suscipit dolorum? Molestias nulla odio molestiae rerum, iusto placeat natus, distinctio aperiam fugit dolorem reiciendis praesentium voluptas totam dolores.</p>
+            <div class="text-center">
+                <a class="btn btn-primary" href="{% url 'signin' %}">
+                    SignIn
+                </a>
+                <a class="btn btn-primary" href="{% url 'signup' %}">
+                    SignUp
+                </a>
+            </div>
+        </section>
+    </main>
 {% endblock %}
