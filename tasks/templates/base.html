@@ -11,17 +11,23 @@
         <ul>
             <li>
                 <a href="/home">Home</a>
+            </li>   
+            {% if user.is_authenticated %}   
+            <li>
+                <a href="/tasks/">Tasks</a>
             </li>
             <li>
-                <a href="/tasks">Taks</a>
-            </li>    
-            {% if user.is_authenticated %}   
+                <a href="/tasks/create">Create tasks</a>
+            </li>
             <li>
                 <a href="/logout">Logout</a>
             </li>
             {% else %}
             <li>
                 <a href="/signup">Signup</a>
+            </li>
+            <li>
+                <a href="/signin">Signin</a>
             </li>
             {% endif %}
 
